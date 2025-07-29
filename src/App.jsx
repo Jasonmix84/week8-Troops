@@ -1,34 +1,36 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
 
+function App() {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+    <div className="crewmate-container">
+      {/* Header Section */}
+      <h1 className="crewmate-title">
+        Welcome to the Crewmate Creator!
+      </h1>
+      {/* Subheader/Description */}
+      <p className="crewmate-desc">
+        Here is where you can create your very own set of crewmates before sending them off into space!
       </p>
-    </>
+      {/* Crewmates Image Section */}
+      <div className="crewmate-img-group">
+        {/* Replace src with your crewmate group image */}
+        <img
+          src="img/Crewmates.png"
+          alt="Crewmates"
+          className="crewmates-img"
+        />
+      </div>
+      {/* Spaceship Image Section */}
+      <div className="spaceship-img-group">
+        {/* Replace src with your spaceship image */}
+        <img
+          src="img/Ship.png"
+          alt="Spaceship"
+          className="spaceship-img"
+        />
+      </div>
+    </div>
   )
 }
 
