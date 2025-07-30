@@ -1,0 +1,66 @@
+.troop-card {
+  background: #232323;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  padding: 1rem;
+  margin: 1rem;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s;
+}
+
+.troop-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+}
+
+.card-link {
+  color: inherit;
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-image {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trait-img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.card-content {
+  text-align: center;
+}
+
+.card-actions {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.edit-btn {
+  background: #ffd700;
+  color: #232323;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.edit-btn:hover {
+  background: #ffe066;
+}

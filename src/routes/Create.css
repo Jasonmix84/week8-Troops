@@ -1,10 +1,8 @@
-#root {
- width: 100%;
-}
 .Layout {
     display: flex;
 } 
-.crewmate-container {
+
+.Create {
   background: #121212;
   min-height: 100vh;
   color: #fff;
@@ -12,37 +10,6 @@
   padding-top: 40px;
   flex: 1;
   margin-left: 180px; /* Same as sidebar width */
-}
-
-
-
-.crewmate-title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-.crewmate-desc {
-  font-size: 1rem;
-  margin-bottom: 2rem;
-}
-
-.crewmate-img-group {
-  margin-bottom: 1.5rem;
-}
-
-.crewmates-img {
-  width: 400px;
-  max-width: 90vw;
-}
-
-.troop-img-group {
-  margin-top: 1rem;
-}
-
-.spaceship-img {
-  width: 400px;
-  max-width: 80vw;
 }
 
 .sidebar {
@@ -74,3 +41,32 @@
   border-radius: 6px;
   transition: background 0.2s;
 }
+.form-confirm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Ensures it takes the full row */
+  margin-top: 1rem;
+}
+
+.create-form {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap; /* Allow forms to wrap to new row */
+  gap: 1.5rem;
+  margin-top: 2rem;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+.create-form > div {
+    flex: 1 1 250px; /* Grow, shrink, min width */
+    min-width: 250px;
+    max-width: 350px;
+    background: rgb(128, 128, 102);
+    padding: 1rem;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+

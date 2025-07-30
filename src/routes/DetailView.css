@@ -1,10 +1,8 @@
-#root {
- width: 100%;
-}
 .Layout {
     display: flex;
 } 
-.crewmate-container {
+
+.detail-view {
   background: #121212;
   min-height: 100vh;
   color: #fff;
@@ -12,37 +10,6 @@
   padding-top: 40px;
   flex: 1;
   margin-left: 180px; /* Same as sidebar width */
-}
-
-
-
-.crewmate-title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-.crewmate-desc {
-  font-size: 1rem;
-  margin-bottom: 2rem;
-}
-
-.crewmate-img-group {
-  margin-bottom: 1.5rem;
-}
-
-.crewmates-img {
-  width: 400px;
-  max-width: 90vw;
-}
-
-.troop-img-group {
-  margin-top: 1rem;
-}
-
-.spaceship-img {
-  width: 400px;
-  max-width: 80vw;
 }
 
 .sidebar {
